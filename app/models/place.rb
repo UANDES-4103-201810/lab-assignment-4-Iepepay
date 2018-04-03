@@ -3,5 +3,4 @@ class Place < ApplicationRecord
 
 	validates :name, presence: true, length: { minimum: 20 }
 	validates :capacity, :integer_only => true, :gt => 0
-
 end
